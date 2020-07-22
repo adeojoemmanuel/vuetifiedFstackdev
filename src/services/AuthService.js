@@ -15,5 +15,5 @@ export default {
   },
   referee(refcode) {
     return Api().get(`auth/referal/${refcode}`);
-  },
+  }
 };

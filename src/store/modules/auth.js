@@ -263,14 +263,14 @@ const actions = {
         commit("SET_REGISTER_ERRORS", null);
         commit("SET_MESSAGE", "Logging you out...");
         // reset all state to default after logout.
-        commit('resetState');
-        commit('product/resetState', {root: true});
-        commit('valueAdded/resetState', {root: true});
-        commit('user/resetState', {root: true});
-        commit('chat/resetState', {root: true});
-        commit('transactions/resetState', {root: true});
-        commit('search/resetState', {root: true});
-        commit('cart/resetState', {root: true});
+        commit("resetState");
+        commit("product/resetState", { root: true });
+        commit("valueAdded/resetState", { root: true });
+        commit("user/resetState", { root: true });
+        commit("chat/resetState", { root: true });
+        commit("transactions/resetState", { root: true });
+        commit("search/resetState", { root: true });
+        commit("cart/resetState", { root: true });
         // send user to login page
         router.push("/login");
         // window.location.href = "/#/login";

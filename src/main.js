@@ -4,15 +4,6 @@ import router from "./router";
 import store from "./store";
 import { sync } from "vuex-router-sync";
 import Notifications from "vue-notification";
-// import firebase from "firebase";
-import * as firebase from "firebase/app";
-import "firebase/auth";
-import "firebase/firestore";
-import "firebase/functions";
-import "firebase/storage";
-import "firebase/messaging";
-import "firebase/database";
-import "firebase/analytics";
 import Clipboard from "v-clipboard";
 import VueChatScroll from "vue-chat-scroll";
 import Vue2Filters from "vue2-filters";
@@ -34,7 +25,6 @@ import "viewerjs/dist/viewer.css";
 import Viewer from "v-viewer";
 import VModal from "vue-js-modal";
 
-require("firebase/firestore");
 var SocialSharing = require("vue-social-sharing");
 
 var firebaseConfig = {
@@ -47,12 +37,7 @@ var firebaseConfig = {
   appId: "1:589334644454:web:3185d38221822872031d27",
   measurementId: "G-HXV1P1K4DJ"
 };
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-firebase.analytics();
-var chatDb = firebase.firestore();
-chatDb.settings({});
-window.chatDb = chatDb;
+
 // import velocity from "velocity-animate";
 import "vue-phone-number-input/dist/vue-phone-number-input.css";
 Vue.config.productionTip = false;

@@ -1,4 +1,6 @@
 <template>
+<div>
+    <topbar></topbar>
     <div class="main-content">
         <div id="header-container"></div>
         <!-- Start Page Wrapper   -->
@@ -431,6 +433,8 @@
 
         <div id="footer-container"></div>
     </div>
+        <Footeer></Footeer>
+  </div>
 </template>
 <script>
 import topbar from "@/components/header";
