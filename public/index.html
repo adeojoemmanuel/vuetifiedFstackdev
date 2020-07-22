@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta data -->
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Home || FStackDev Software Development Agency</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <!-- CSS
+============================================ -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/slick.css" />
+    <link rel="stylesheet" href="assets/css/plugins/font-awesome.css" />
+    <link rel="stylesheet" href="assets/css/plugins/plugins.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- jQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#footer-container").load("footer.html");
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#header-container").load("header.html");
+        });
+    </script>
+    <!--  tdx mega -->
+    <!-- <link href="./assets/css/tdx-mega.css" rel="stylesheet" /> -->
+
+    <title>Fstackdev - Official Site</title>
+    <!-- Start of Async Drift Code -->
+  </head>
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but Fstackdev doesn't work properly without JavaScript
+        enabled. Please enable it to continue.</strong
+      >
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+
+  </body>
+   <!-- JS
+============================================ -->
+
+    <!-- Modernizer JS -->
+    <script src="assets/js/vendor/modernizr.min.js"></script>
+    <!-- jQuery JS -->
+    <script src="assets/js/vendor/jquery.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/counterup.js"></script>
+    <script src="assets/js/imagesloaded.js"></script>
+    <script src="assets/js/isotope.js"></script>
+    <script src="assets/js/tilt.js"></script>
+    <script src="assets/js/anime.js"></script>
+    <script src="assets/js/tweenmax.js"></script>
+    <script src="assets/js/slipting.js"></script>
+    <script src="assets/js/scrollmagic.js"></script>
+    <script src="assets/js/addindicators.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/youtube.js"></script>
+    <script src="assets/js/countdown.js"></script>
+    <script src="assets/js/scrollup.js"></script>
+    <script src="assets/js/stickysidebar.js"></script>
+    <script src="assets/js/contactform.js"></script>
+    <!-- Plugins JS -->
+    <script src="assets/js/plugins/plugins.min.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+    <!-- TO fix the counterup issue -->
+    <script src="./bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="./bower_components/jquery.counterup/jquery.counterup.min.js"></script>
+
+     <style>
+        #map {
+          width: 100%;
+          height: 400px;
+          background-color: grey;
+        }
+      </style>
+      <script>
+        // Initialize and add the map
+        function initMap() {
+          // The location of Uluru
+          var uluru = {lat: -25.344, lng: 131.036};
+          // The map, centered at Uluru
+          var map = new google.maps.Map(
+              document.getElementById('map'), {zoom: 4, center: uluru});
+          // The marker, positioned at Uluru
+          var marker = new google.maps.Marker({position: uluru, map: map});
+        }
+       </script>
+       <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+        </script>
+</html>

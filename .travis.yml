@@ -1,0 +1,30 @@
+language: node_js
+node_js:
+  - "10.16.3"
+  - "node"
+env:
+  - WEBPACK_VERSION= # Current, from package.json
+  - WEBPACK_VERSION=4
+install:
+  # Use npm 5.7.x since it has introduced `npm ci`
+  - if [[ `npm -v` != 5.7* ]]; then npm install -g npm@'>=5.7.1'; fi
+  - npm ci
+before_script:
+  # Install Webpack version
+  - if [[ -n "$WEBPACK_VERSION" ]]; then npm install --no-save webpack@$WEBPACK_VERSION; fi
+# branches:
+#   except:
+#     - gh-pages
+stages:
+  - lint
+  - build
+jobs:
+  include:
+    - stage: lint
+      script:
+        # Run linter
+        - npm run lint
+    - stage: build
+      script:
+        # Build all
+        - npm run build
