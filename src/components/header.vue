@@ -8,11 +8,11 @@
           <div class="row align-items-center">
             <div class="col-lg-3 col-xl-3 col-md-6 col-sm-6 col-8 header-left">
               <div class="logo">
-                <a href="index.html">
-                  <a href="index.html"
+                <router-link to="/home">
+                   <router-link to="/home">
                     ><img src="assets/images/logo/fsd.png" alt="FStackDev"
-                  /></a>
-                </a>
+                  /></router-link>
+                </router-link>
               </div>
             </div>
             <div class="col-lg-7 col-xl-6 d-none d-lg-block">
@@ -20,13 +20,13 @@
                 <!-- Start Mainmanu Nav -->
                 <nav class="mainmenu-nav d-none d-lg-block">
                   <ul class="mainmenu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
+                    <li><router-link to="/home">Home</router-link></li>
+                    <li><router-link to="/about">About Us</router-link></li>
                     <!-- <li class="has-dropdown"><a href="#">Blog</a></li> -->
-                    <li><a href="services.html">Services</a></li>
+                    <li><router-link to="/service">Services</router-link></li>
                     <!-- <li><a href="team.html">Team</a></li> -->
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="training.html">Training</a></li>
+                    <li><router-link to="/contact">Contact</router-link></li>
+                    <li><router-link to="/training">Training</router-link></li>
                   </ul>
                 </nav>
                 <!-- End Mainmanu Nav -->
@@ -106,11 +106,13 @@
         </div>
         <div class="menu-item">
           <ul class="mainmenu-item">
-            <li><a href="index.html">Home</a></li>
-            <li class="has-dropdown"><a href="#">Services</a></li>
-            <li><a href="about.html">AboutUs</a></li>
-            <li><a href="team.html">Team</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><router-link to="/home">Home</router-link></li>
+            <li class="has-dropdown">
+              <router-link to="/service">Services</router-link>
+            </li>
+            <li><router-link to="/about">About Us</router-link></li>
+            <li><router-link to="/contact">Contact</router-link></li>
+            <li><router-link to="/training">Training</router-link></li>
           </ul>
         </div>
       </div>

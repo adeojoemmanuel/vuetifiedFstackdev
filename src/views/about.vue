@@ -127,11 +127,9 @@
                                             <li>
                                                 Understanding the target audience, market & geography.
                                             </li>
-                                
                                             <li>
                                                 Understanding and documenting clients design and brand preferences.
                                             </li>
-                                           
                                         </ul>            
                                     </p>
                                 </div>
@@ -286,12 +284,7 @@
                                         <h2 class="title">What can our project team do for you </h2>
                                         <p class="subtitle-2 pr--0">Explore the subject area and business flow, identify blocks and present relevant solutions, organize the clutter, create a roadmap.
                                         </p>
-                                        <!-- <div class="axil-button-group mt--40">
-                                            <a class="axil-button btn-large btn-transparent" href="team.html"><span
-                                                    class="button-text">Our Team</span><span
-                                                    class="button-icon"></span></a>
-                                            <a class="axil-button axil-link-button" href="#">Careers</a>
-                                        </div> -->
+                                       
                                     </div>
                                 </div>
                             </div>
@@ -438,12 +431,12 @@
 </template>
 <script>
 import topbar from "@/components/header";
-import Footer from "@/components/footer";
+import Footeer from "@/components/footer";
 export default {
   name: "about",
   components: {
     topbar,
-    Footer
+    Footeer
   },
   methods: {
     sync() {

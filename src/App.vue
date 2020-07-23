@@ -15,8 +15,6 @@
 
 <style></style>
 <script>
-
-
 import topbar from "@/components/header";
 import router from "@/router";
 import Footer from "@/components/footer";

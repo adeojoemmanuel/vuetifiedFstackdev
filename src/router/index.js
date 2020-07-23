@@ -17,12 +17,13 @@ import singleService from "../views/single-service.vue";
 import teamDetails from "../views/team-details.vue";
 import team from "../views/team.vue";
 import testimonial from "../views/testimonial.vue";
+import training from "../views/training.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/",
+    path: "/home",
     name: "home",
     component: index,
     meta: {
@@ -34,6 +35,15 @@ const routes = [
     path: "/about",
     name: "about",
     component: about,
+    meta: {
+      header: 1,
+      reload: true
+    }
+  },
+  {
+    path: "/training",
+    name: "training",
+    component: training,
     meta: {
       header: 1,
       reload: true

@@ -193,21 +193,15 @@
               >
                 <div class="axil-office-location mt--30 wow move-up" id="map">
                   <iframe
-                    width="852"
-                    height="348"
+                    width="100%"
+                    height="398"
                     frameborder="0"
                     scrolling="no"
                     marginheight="0"
                     marginwidth="0"
                     src="https://maps.google.com/maps?width=852&amp;height=348&amp;hl=en&amp;q=FStackDev%20Abuja+(FStackDev)&amp;t=&amp;z=18&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
                   ></iframe>
-                  <a href="https://www.embedmap.net/"
-                    >adding google map to website</a
-                  >
-                  <script
-                    type="text/javascript"
-                    src="https://embedmaps.com/google-maps-authorization/script.js?id=334d30f327f851e60b99e991c7acaaa7835aac41"
-                  ></script>
+
                   <div class="content">
                     <h4 class="title">Abuja</h4>
                     <p>
@@ -215,7 +209,7 @@
                       Second floor wing c reinsurane building.<br />
                       Nigeria
                     </p>
-                    <a class="axil-button btn-transparent" href="#"
+                    <a class="axil-button btn-transparent" href="http://maps.google.com/?q=FStackDev, Herbert Macaulay Way, Abuja" target="_blank"
                       ><span class="button-text">View on Map</span
                       ><span class="button-icon"></span
                     ></a>
@@ -238,12 +232,12 @@
 </template>
 <script>
 import topbar from "@/components/header";
-import Footer from "@/components/footer";
+import Footeer from "@/components/footer";
 export default {
   name: "contact",
   components: {
     topbar,
-    Footer
+    Footeer
   },
   methods: {
     sync() {

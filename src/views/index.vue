@@ -24,15 +24,15 @@
                       Software <br />
                       Development
                     </h1>
-                    <a
+                    <router-link
+                      to="/about"
                       class="axil-button btn-large btn-transparent wow slideFadeInUp"
                       data-wow-duration="1s"
                       data-wow-delay="800ms"
-                      href="about.html"
                     >
                       <span class="button-text">About Us</span
                       ><span class="button-icon"></span>
-                    </a>
+                    </router-link>
                   </div>
                 </div>
               </div>
@@ -41,7 +41,6 @@
           <!-- End Single Slide -->
         </div>
         <!-- End Slider Area -->
-
 
         <!-- Start Service Area -->
         <div class="axil-service-area ax-section-gap bg-color-white ppplr--100">
@@ -190,12 +189,12 @@
                     fixed time/cost projects.
                   </p>
                   <div class="view-all-portfolio-button mt--40">
-                    <a
+                    <router-link
+                      to="/team"
                       class="axil-button btn-large btn-transparent"
-                      href="contact.html"
                       ><span class="button-text">Contact Us</span
                       ><span class="button-icon"></span
-                    ></a>
+                    ></router-link>
                   </div>
                 </div>
               </div>
@@ -400,12 +399,12 @@
                         creating.
                       </p>
                       <div class="axil-button-group mt--40">
-                        <a
+                        <router-link
+                          to="/team"
                           class="axil-button btn-large btn-transparent"
-                          href="team.html"
                           ><span class="button-text">Our Team</span
                           ><span class="button-icon"></span
-                        ></a>
+                        ></router-link>
                       </div>
                     </div>
                   </div>
@@ -434,10 +433,10 @@
                       >Let's work together</span
                     >
                     <h2 class="title wow">Need a successful project?</h2>
-                    <a class="axil-button btn-large btn-transparent" href="#"
+                    <router-link to="/team" class="axil-button btn-large btn-transparent"
                       ><span class="button-text">Estimate Project</span
                       ><span class="button-icon"></span
-                    ></a>
+                    ></router-link>
                     <div class="callto-action">
                       <span class="text wow">Or call us now</span>
                       <span class="wow">
@@ -487,8 +486,7 @@ export default {
     Footeer
   },
   methods: {
-    sync() {
-    }
+    sync() {}
   },
   watch: {
     $route: "sync"
