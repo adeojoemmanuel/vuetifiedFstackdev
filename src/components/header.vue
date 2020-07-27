@@ -20,7 +20,7 @@
                 <!-- Start Mainmanu Nav -->
                 <nav class="mainmenu-nav d-none d-lg-block">
                   <ul class="mainmenu">
-                    <li><router-link to="/home">Home</router-link></li>
+                    <li><router-link to="/">Home</router-link></li>
                     <li><router-link to="/about">About Us</router-link></li>
                     <!-- <li class="has-dropdown"><a href="#">Blog</a></li> -->
                     <li><router-link to="/service">Services</router-link></li>
