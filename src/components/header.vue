@@ -8,8 +8,8 @@
           <div class="row align-items-center">
             <div class="col-lg-3 col-xl-3 col-md-6 col-sm-6 col-8 header-left">
               <div class="logo">
-                <router-link to="/home">
-                   <router-link to="/home">
+                <router-link to="/">
+                   <router-link to="/">
                     ><img src="assets/images/logo/fsd.png" alt="FStackDev"
                   /></router-link>
                 </router-link>
