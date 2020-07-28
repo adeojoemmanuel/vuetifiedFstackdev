@@ -89,10 +89,10 @@ button {
     width: 1rem;
     height: 1rem;
     opacity: 1;
-    border: 3.4px solid #888;
+    border: 3.4px solid #c1c1c1;
     border-radius: 50%;
     animation: spinner 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-    border-color: #888 transparent transparent transparent;
+    border-color: #c1c1c1 transparent transparent transparent;
 }
 
 .spinner span:nth-child(1) {
