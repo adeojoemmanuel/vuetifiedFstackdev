@@ -59,10 +59,12 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <button class="axil-button btn-large btn-transparent w-100" @click.prevent="formSubmit" :disabled="loading">
-                        <span class="button-text">Register Now</span><span class="button-icon"></span>
+                    <LoadingButton class="axil-button btn-large btn-transparent w-100" :styled="false" :loading="loading" aria-label='Register Now ' @buttonClick="formSubmit" buttonText="Register Now" />
+                    <!-- <button class="" @click.prevent="formSubmit" :disabled="loading">
+                        <span v-if="loading">Sending...</span>
+                        <span class="button-text" v-else>Register Now</span><span class="button-icon"></span>
                     </button>
-                </div>
+ -->                </div>
             </form>
             <div class="callto-action-wrapper text-center">
                 <span class="text">Or call us now</span>
@@ -74,10 +76,12 @@
     <!-- End Contact Form -->
 </template>
 <script>
+import LoadingButton from '@/components/LoadingButton'
 import { validationMixin } from 'vuelidate'
 import db from '@/firebase';
 import { required, minLength, email, maxLength, numeric } from 'vuelidate/lib/validators';
 export default {
+    components: { LoadingButton },
     data() {
         return {
             loading: false,
@@ -132,7 +136,8 @@ export default {
                     title: this.submitStatus,
                     icon: 'error'
                 });
-                this.loading = false;
+                let as = this;
+                setTimeout(function() { as.loading = false; }, 2000)
             }
         },
         successOperation() {
@@ -189,5 +194,18 @@ export default {
 .error-text {
     color: #f79483;
     display: block;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity .5s;
+}
+
+.fade-enter,
+.fade-leave-to
+
+/* .fade-leave-active below version 2.1.8 */
+    {
+    opacity: 0;
 }
 </style>
