@@ -97,7 +97,7 @@
                           </div>
                       </div>
                       <div class="form-group">
-                          <LoadingButton class="axil-button btn-large btn-transparent w-100" :styled="false" :loading="loading" aria-label='Register Now ' @buttonClick="formSubmit" buttonText="Send Message" />
+                          <LoadingButton class="axil-button btn-large btn-transparent w-100" :styled="false" :loading="loading" aria-label='Send Message ' @buttonClick="formSubmit" buttonText="Send Message" />
         
                       </div>
                       </form>

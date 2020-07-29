@@ -50,11 +50,21 @@
                   </p>
                   <div class="axil-newsletter">
                     <form class="newsletter-form" action="#">
-                      <input type="email" placeholder="Email" />
-                      <a class="axil-button btn-transparent" href="#"
+                      <div class="form-group" :class="[$v.email.$error ? 'form-group--error' : '']">
+                          <input type="email" v-model="email" @blur="$v.email.$touch()">
+                          <label>Email</label>
+                          <!-- <span class="focus-border"></span> -->
+                          <div v-if="$v.email.$error">
+                              <span v-if="!$v.email.required" class="error-text">Your email is needed for registration</span>
+                              <span v-if="!$v.email.email" class="error-text">Your email is not valid</span>
+                          </div>
+                      </div>
+                      <!-- <a class="axil-button btn-transparent" href="#"
                         ><span class="button-text">Subscribe</span
                         ><span class="button-icon"></span
                       ></a>
+ -->                      
+                      <LoadingButton class="axil-button btn-transparent" :styled="false" :loading="loading" aria-label='Subscribe ' @buttonClick="formSubmit" buttonText="Send Message" />
                     </form>
                   </div>
                 </div>
@@ -150,13 +160,82 @@
 </template>
 
 <script>
-import moment from "moment";
+import LoadingButton from '@/components/LoadingButton'
+import { validationMixin } from 'vuelidate'
+import db from '@/firebase';
+import { required, minLength, email, maxLength, numeric } from 'vuelidate/lib/validators';
 export default {
-  name: "Footer",
-  methods: {
-    format_date() {
-      return moment().format("YYYY");
-    }
-  }
-};
+    components: { LoadingButton },
+    data() {
+        return {
+            loading: false,
+            email: '',
+            submitStatus: null,
+            users: []
+        }
+    },
+    mixins: [validationMixin],
+    validations: {
+        email: { required, email }
+    },
+    firestore() {
+        return {
+            users: db.collection('subscribers'),
+        }
+    },
+    methods: {
+        async formSubmit() {
+            this.loading = true;
+            this.$v.$touch();
+            if (!this.$v.$invalid) {
+                this.$firestore.users.add({
+                    email: this.email,
+                    timestamp: new Date()
+                }).then(docRef => {
+                    this.successOperation()
+                }).catch(error => { this.failedRequest() })
+            } else {
+                this.submitStatus = 'Error, please fill out Properly.'
+                this.$swal({
+                    toast: true,
+                    position: 'top-end',
+                    showConfirmButton: false,
+                    timer: 7000,
+                    timerProgressBar: true,
+                    title: this.submitStatus,
+                    icon: 'error'
+                });
+                let as = this;
+                setTimeout(function() { as.loading = false; }, 2000)
+            }
+        },
+        successOperation() {
+            this.$swal({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 3000,
+                timerProgressBar: true,
+                title: 'Message Successfully Sent',
+                text: `${this.email}, You have successfully Subscribed`,
+                icon: 'success'
+            });
+            setTimeout(function() { location.reload() }, 3000)
+            this.loading = false;
+        },
+        failedRequest() {
+            this.$swal({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 3000,
+                timerProgressBar: true,
+                title: "Server Error",
+                text: 'Sorry please try again later, thanks.',
+                icon: 'error'
+            });
+            this.loading = false;
+        }
+    }, 
+}
 </script>
