@@ -1,6 +1,5 @@
 <template>
   <div>
-    <topbar></topbar>
     <div class="main-content">
       <div id="header-container"></div>
 
@@ -473,18 +472,11 @@
       <!-- End Page Wrapper -->
       <!-- Start Footer Area -->
     </div>
-    <Footeer></Footeer>
   </div>
 </template>
 <script>
-import topbar from "@/components/header";
-import Footeer from "@/components/footer";
 export default {
   name: "index",
-  components: {
-    topbar,
-    Footeer
-  },
   methods: {
     sync() {}
   },

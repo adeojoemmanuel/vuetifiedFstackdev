@@ -1,6 +1,5 @@
 <template>
   <div>
-    <topbar></topbar>
       <div class="main-content">
         <div id="header-container"></div>
         <main class="main-wrapper">
@@ -28,23 +27,14 @@
             </div>
             <!-- End Slider Area -->
         </main>
-
-        <!-- Start Footer Area -->
-        <div id="footer-container"></div>
-        <!-- End Footer Area -->
     </div>
-    <Footeer></Footeer>
   </div>
 </template>
 <script>
 import TrainingForm from '@/components/TrainingForm.vue';
-import topbar from "@/components/header";
-import Footeer from "@/components/footer";
 export default {
   name: "service",
   components: {
-    topbar,
-    Footeer,
     TrainingForm
   },
   methods: {

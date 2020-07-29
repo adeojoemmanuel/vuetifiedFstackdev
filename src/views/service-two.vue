@@ -1,6 +1,5 @@
 <template>
   <div>
-    <topbar></topbar>
     <div class="main-content">
       <!-- Start Header -->
       <header
@@ -1120,14 +1119,8 @@
   </div>
 </template>
 <script>
-import topbar from "@/components/header";
-import Footeer from "@/components/footer";
 export default {
   name: "serviceTwo",
-  components: {
-    topbar,
-    Footeer
-  },
   methods: {
     sync() {
       // console.log("Jquery mounted");

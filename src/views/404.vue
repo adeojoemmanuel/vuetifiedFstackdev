@@ -1,6 +1,5 @@
 <template>
   <div>
-    <topbar></topbar>
     <div class="main-content">
       <div id="header-container"></div>
       <!-- Start Page Wrapper -->
@@ -50,18 +49,12 @@
         <!-- End Page Error Area  -->
       </main>
     </div>
-    <Footeer></Footeer>
   </div>
 </template>
 <script>
-import topbar from "@/components/header";
-import Footeer from "@/components/footer";
+
 export default {
   name: "p404",
-  components: {
-    topbar,
-    Footeer
-  },
   methods: {
     sync() {
       // console.log("Jquery mounted");

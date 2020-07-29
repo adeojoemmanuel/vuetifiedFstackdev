@@ -1,6 +1,5 @@
 <template>
   <div>
-    <topbar></topbar>
     <div
       class="position-relative spybody"
       data-spy="scroll"
@@ -973,18 +972,11 @@
         <!-- End Footer Area -->
       </div>
     </div>
-    <Footeer></Footeer>
   </div>
 </template>
 <script>
-import topbar from "@/components/header";
-import Footeer from "@/components/footer";
 export default {
   name: "service",
-  components: {
-    topbar,
-    Footeer
-  },
   methods: {
     sync() {
       // console.log("Jquery mounted");

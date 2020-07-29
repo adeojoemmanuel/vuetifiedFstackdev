@@ -1,6 +1,5 @@
 <template>
   <div>
-    <topbar></topbar>
     <div class="main-content">
       <!-- Start Header -->
       <header class="ax-header haeder-default light-logo-version header-transparent axil-header-sticky">
@@ -1081,14 +1080,9 @@
   </div>
 </template>
 <script>
-import topbar from "@/components/header";
-// import Footer from "@/components/footer";
+
 export default {
   name: "testimonial",
-  components: {
-    topbar
-    // Footer
-  },
   methods: {
     sync() {
       // console.log("Jquery mounted");

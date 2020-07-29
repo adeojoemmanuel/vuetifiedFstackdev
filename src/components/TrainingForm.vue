@@ -159,7 +159,7 @@ export default {
                 toast: true,
                 position: 'top-end',
                 showConfirmButton: false,
-                timer: 3000,
+                timer: 7000,
                 timerProgressBar: true,
                 title: "Server Error",
                 text: 'Sorry please try again later, thanks.',

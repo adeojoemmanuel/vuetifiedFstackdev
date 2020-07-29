@@ -1,6 +1,5 @@
 <template>
   <div>
-    <topbar></topbar>
     <div class="main-content">
       <!-- Start Header -->
       <header
@@ -1040,18 +1039,11 @@
       </footer>
       <!-- End Footer Area -->
     </div>
-    <Footeer></Footeer>
   </div>
 </template>
 <script>
-import topbar from "@/components/header";
-import Footer from "@/components/footer";
 export default {
   name: "blog",
-  components: {
-    topbar,
-    Footer
-  },
   methods: {
     sync() {
       // console.log("Jquery mounted");

@@ -1,6 +1,6 @@
 <template>
 <div>
-    <topbar></topbar>
+    
     <div class="main-content">
         <div id="header-container"></div>
         <!-- Start Page Wrapper   -->
@@ -426,18 +426,12 @@
 
         <div id="footer-container"></div>
     </div>
-        <Footeer></Footeer>
   </div>
 </template>
 <script>
-import topbar from "@/components/header";
-import Footeer from "@/components/footer";
+
 export default {
   name: "about",
-  components: {
-    topbar,
-    Footeer
-  },
   methods: {
     sync() {
       // console.log("Jquery mounted");

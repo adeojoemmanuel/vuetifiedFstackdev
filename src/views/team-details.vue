@@ -1,6 +1,5 @@
 <template>
   <div>
-    <topbar></topbar>
     <div class="main-content">
       <div id="header-container"></div>
 
@@ -76,18 +75,11 @@
       <div id="footer-container"></div>
       <!-- End Footer Area -->
     </div>
-    <Footeer></Footeer>
   </div>
 </template>
 <script>
-import topbar from "@/components/header";
-import Footeer from "@/components/footer";
 export default {
   name: "teamDetails",
-  components: {
-    topbar,
-    Footeer
-  },
   methods: {
     sync() {
       // console.log("Jquery mounted");

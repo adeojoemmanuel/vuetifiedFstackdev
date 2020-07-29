@@ -1,7 +1,6 @@
 <template>
   <!-- Start Blog Area -->
   <div>
-    <topbar></topbar>
     <div class="axil-blog-area ax-section-gap bg-color-lightest ppplr--100">
       <div class="container">
         <div class="row">
@@ -74,18 +73,11 @@
         </div>
       </div>
     </div>
-    <Footeer></Footeer>
   </div>
 </template>
 <script>
-import topbar from "@/components/header";
-import Footeer from "@/components/footer";
 export default {
   name: "latestBlog",
-  components: {
-    topbar,
-    Footeer
-  },
   methods: {
     sync() {
       // console.log("Jquery mounted");

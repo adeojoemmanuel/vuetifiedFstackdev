@@ -1,6 +1,5 @@
 <template>
   <div>
-    <topbar></topbar>
     
     <div class="main-content">
         <div id="header-container"></div>
@@ -398,21 +397,42 @@
                         <div class="tab-pane fade" id="bsiness" role="tabpanel" aria-labelledby="backend-tab">
                             <div class="row">
                                 <!-- Start Single Team  -->
-                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12 mt--60 mt_sm--30 mt_md--30">
-                                    <div class="axil-team">
-                                        <div class="inner">
-                                            <div class="thumbnail paralax-image">
-                                                <a href="team-details.html">
-                                                    <img class="w-100" src="assets/images/team/ansa.PNG" alt="Team Images">
-                                                </a>
-                                            </div>
-                                            <div class="content">
-                                                <h4 class="title"><a href="team-details.html">Ansa David</a></h4>
-                                                <p class="subtitle">Human Resource Manager</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                       
+
+                                      <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12 mt--60 mt_sm--30 mt_md--30">
+                                          <div class="axil-team">
+                                              <div class="inner">
+                                                  <div class="thumbnail paralax-image">
+                                                      <a href="team-details.html">
+                                                          <img class="w-100" src="assets/images/team/ansa.PNG" alt="Team Images">
+                                                      </a>
+                                                  </div>
+                                                  <div class="content">
+                                                      <h4 class="title"><a href="team-details.html">Ansa David</a></h4>
+                                                      <p class="subtitle">Human Resource Manager</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- End Single Team  -->
+
+                                      <!-- Start Single Team  -->
+                                      <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12 mt--60 mt_sm--30 mt_md--30">
+                                          <div class="axil-team">
+                                              <div class="inner">
+                                                  <div class="thumbnail paralax-image">
+                                                      <a href="team-details.html">
+                                                          <img class="w-100" src="assets/images/team/zues.JPG" alt="Team Images">
+                                                      </a>
+                                                  </div>
+                                                  <div class="content">
+                                                      <h4 class="title"><a href="team-details.html">Owa Zuriel</a></h4>
+                                                      <p class="subtitle">Business Development Consultant</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                   
                                 <!-- End Single Team  -->
 
                             </div>
@@ -430,8 +450,6 @@
         <div id="footer-container"></div>
         <!-- End Footer Area -->
     </div>
-   
-    <Footeer></Footeer>
   </div>
 </template>
 <script>
@@ -439,10 +457,6 @@ import topbar from "@/components/header";
 import Footeer from "@/components/footer";
 export default {
   name: "team",
-  components: {
-    topbar,
-    Footeer
-  },
   methods: {
     sync() {
       // console.log("Jquery mounted");

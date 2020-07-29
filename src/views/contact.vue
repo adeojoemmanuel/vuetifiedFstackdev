@@ -1,6 +1,5 @@
 <template>
   <div>
-    <topbar></topbar>
     <div class="main-content">
       <div id="header-container"></div>
 
@@ -245,7 +244,6 @@
       <div id="footer-container"></div>
       <!-- End Footer Area -->
     </div>
-    <Footeer></Footeer>
   </div>
 </template>
 <script>
@@ -298,7 +296,7 @@ export default {
                     toast: true,
                     position: 'top-end',
                     showConfirmButton: false,
-                    timer: 3000,
+                    timer: 7000,
                     timerProgressBar: true,
                     title: this.submitStatus,
                     icon: 'error'
