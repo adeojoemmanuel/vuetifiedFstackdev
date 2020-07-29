@@ -1136,7 +1136,6 @@
   </div>
 </template>
 <script>
-
 export default {
   name: "blogDetails",
   methods: {

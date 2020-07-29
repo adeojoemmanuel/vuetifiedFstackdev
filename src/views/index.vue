@@ -432,7 +432,9 @@
                       >Let's work together</span
                     >
                     <h2 class="title wow">Need a successful project?</h2>
-                    <router-link to="/team" class="axil-button btn-large btn-transparent"
+                    <router-link
+                      to="/team"
+                      class="axil-button btn-large btn-transparent"
                       ><span class="button-text">Estimate Project</span
                       ><span class="button-icon"></span
                     ></router-link>

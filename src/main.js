@@ -11,7 +11,7 @@ import Vue2Filters from "vue2-filters";
 import ScrollLoader from "vue-scroll-loader";
 import underscore from "vue-underscore";
 import infiniteScroll from "vue-infinite-scroll";
-import VueFirestore from 'vue-firestore';
+import VueFirestore from "vue-firestore";
 // import {
 //     ValidationObserver,
 //     ValidationProvider,
@@ -48,22 +48,22 @@ Vue.use(infiniteScroll);
 Vue.use(Viewer);
 Vue.use(VModal);
 const options = {
-    confirmButtonColor: "#41b882",
-    cancelButtonColor: "#ff7674"
+  confirmButtonColor: "#41b882",
+  cancelButtonColor: "#ff7674"
 };
 
 Vue.use(VueSweetalert2, options);
 export const bus = new Vue();
 sync(store, router);
 new Vue({
-    router,
-    store,
-    render: h => h(App)
-        // watch: {
-        //   $route(to) {
-        //     if (to.currentRoute.meta.reload == true) {
-        //       window.location.reload();
-        //     }
-        //   }
-        // }
+  router,
+  store,
+  render: h => h(App)
+  // watch: {
+  //   $route(to) {
+  //     if (to.currentRoute.meta.reload == true) {
+  //       window.location.reload();
+  //     }
+  //   }
+  // }
 }).$mount("#app");
