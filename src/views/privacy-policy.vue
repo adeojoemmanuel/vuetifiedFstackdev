@@ -797,12 +797,12 @@
 </template>
 <script>
 import topbar from "@/components/header";
-import Footer from "@/components/footer";
+import Footeer from "@/components/footer";
 export default {
   name: "privacyPolicy",
   components: {
     topbar,
-    Footer
+    Footeer
   },
   methods: {
     sync() {

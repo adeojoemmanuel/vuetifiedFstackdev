@@ -22,56 +22,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Start Contact Form -->
-                    <div class="contact-form-wrapper" style="margin-buttom:10%;">
-                        <div class="axil-contact-form contact-form-style-1">
-                            <h3 class="title">Bootcamp Registration Form</h3>
-                            <form action="#">
-                                <div class="form-group">
-                                    <input type="text">
-                                    <label>Surname</label>
-                                    <span class="focus-border"></span>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text">
-                                    <label>First Name</label>
-                                    <span class="focus-border"></span>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text">
-                                    <label>Other Name</label>
-                                    <span class="focus-border"></span>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email">
-                                    <label>Email</label>
-                                    <span class="focus-border"></span>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text">
-                                    <label>Phone Number</label>
-                                    <span class="focus-border"></span>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text">
-                                    <label>Address</label>
-                                    <span class="focus-border"></span>
-                                </div>
-                                <div class="form-group">
-                                    <button class="axil-button btn-large btn-transparent w-100">
-                                        <span class="button-text">Register Now</span><span
-                                            class="button-icon"></span>
-                                    </button>
-                                </div>
-                            </form>
-                            <div class="callto-action-wrapper text-center">
-                                <span class="text">Or call us now</span>
-                                <span><i class="fal fa-phone-alt"></i> <a href="#">+(234)
-                                    813490-1464</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Contact Form -->
+                   <training-form />
                 </div>
                 <!-- End Single Slide -->
             </div>
@@ -86,13 +37,15 @@
   </div>
 </template>
 <script>
+import TrainingForm from '@/components/TrainingForm.vue';
 import topbar from "@/components/header";
 import Footeer from "@/components/footer";
 export default {
   name: "service",
   components: {
     topbar,
-    Footeer
+    Footeer,
+    TrainingForm
   },
   methods: {
     sync() {}

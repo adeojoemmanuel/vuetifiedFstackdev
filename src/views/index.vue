@@ -381,7 +381,7 @@
                     />
                   </div>
                   <div class="total-team-button">
-                    <a href="team.html"><span>10+</span></a>
+                    <router-link to="/team"><span>10+</span></router-link>
                   </div>
                 </div>
               </div>
