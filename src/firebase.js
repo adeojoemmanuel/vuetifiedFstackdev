@@ -12,15 +12,15 @@ import "@firebase/firestore";
 //     measurementId: "G-TTXTF7ZD9W"
 // });
 
-const firebaseApp =  firebase.initializeApp({
-    apiKey: "AIzaSyBzhpADIKV90PDjpJJqwQDnB30RuKVLkHg",
-    authDomain: "fstackdev-training-f7309.firebaseapp.com",
-    databaseURL: "https://fstackdev-training-f7309.firebaseio.com",
-    projectId: "fstackdev-training-f7309",
-    storageBucket: "fstackdev-training-f7309.appspot.com",
-    messagingSenderId: "759745417928",
-    appId: "1:759745417928:web:5aeb830af610b1b95ecbfd",
-    measurementId: "G-TFVKRRJWMC"
+const firebaseApp = firebase.initializeApp({
+  apiKey: "AIzaSyBzhpADIKV90PDjpJJqwQDnB30RuKVLkHg",
+  authDomain: "fstackdev-training-f7309.firebaseapp.com",
+  databaseURL: "https://fstackdev-training-f7309.firebaseio.com",
+  projectId: "fstackdev-training-f7309",
+  storageBucket: "fstackdev-training-f7309.appspot.com",
+  messagingSenderId: "759745417928",
+  appId: "1:759745417928:web:5aeb830af610b1b95ecbfd",
+  measurementId: "G-TFVKRRJWMC"
 });
 
 let db = firebaseApp.firestore();

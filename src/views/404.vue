@@ -52,7 +52,6 @@
   </div>
 </template>
 <script>
-
 export default {
   name: "p404",
   methods: {

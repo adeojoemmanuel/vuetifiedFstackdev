@@ -2,7 +2,9 @@
   <div>
     <div class="main-content">
       <!-- Start Header -->
-      <header class="ax-header haeder-default light-logo-version header-transparent axil-header-sticky">
+      <header
+        class="ax-header haeder-default light-logo-version header-transparent axil-header-sticky"
+      >
         <div class="header-wrapper">
           <div class="container">
             <div class="row align-items-center">
@@ -38,10 +40,7 @@
                                 font-weight="bold"
                                 fill="#000248"
                               >
-                                <tspan
-                                  x="75"
-                                  y="24"
-                                >Keystroke</tspan>
+                                <tspan x="75" y="24">Keystroke</tspan>
                                 <tspan
                                   x="175.14"
                                   y="24.5001221"
@@ -143,7 +142,9 @@
                           <li><a href="testimonial.html">Testimonial</a></li>
                           <li><a href="portfolio.html">Portfolio</a></li>
                           <li>
-                            <a href="portfolio-details.html">Portfolio Details</a>
+                            <a href="portfolio-details.html"
+                              >Portfolio Details</a
+                            >
                           </li>
                           <li><a href="pricing.html">Pricing</a></li>
                           <li><a href="services.html">Services</a></li>
@@ -151,7 +152,9 @@
                           <li><a href="team-details.html">Team Details</a></li>
                           <li><a href="case-study.html">Case Study</a></li>
                           <li>
-                            <a href="single-case-study.html">Case Study Details</a>
+                            <a href="single-case-study.html"
+                              >Case Study Details</a
+                            >
                           </li>
                           <li><a href="comming-soon.html">Comming Soon</a></li>
                           <li><a href="404.html">404 Page</a></li>
@@ -164,15 +167,16 @@
                   <div class="axil-header-extra d-flex align-items-center">
                     <!-- Start Search Area -->
                     <div class="ax-search-area ml--40 ml_sm--10">
-                      <a
-                        class="search-trigger"
-                        href="#"
-                      ><i class="fas fa-search"></i></a>
+                      <a class="search-trigger" href="#"
+                        ><i class="fas fa-search"></i
+                      ></a>
                     </div>
                     <!-- End Search Area -->
 
                     <!-- Start Hamburger -->
-                    <div class="ax-hamburger ml--40 ml_sm--10 d-none d-lg-block">
+                    <div
+                      class="ax-hamburger ml--40 ml_sm--10 d-none d-lg-block"
+                    >
                       <a
                         class="axil-menuToggle ax-hamburger-trigger"
                         id="side-nav-toggler"
@@ -186,7 +190,9 @@
                     <!-- End Hamburger -->
 
                     <!-- Start Menu Bar  -->
-                    <div class="ax-menubar popup-navigation-activation d-block d-lg-none ml_sm--20 ml_md--20">
+                    <div
+                      class="ax-menubar popup-navigation-activation d-block d-lg-none ml_sm--20 ml_md--20"
+                    >
                       <div>
                         <i></i>
                       </div>
@@ -195,26 +201,16 @@
 
                     <!-- Start Search Area  -->
                     <div class="axil-search-area">
-                      <form
-                        action="#"
-                        class="axil-searchbar w-100"
-                      >
+                      <form action="#" class="axil-searchbar w-100">
                         <div class="search-field">
-                          <input
-                            type="text"
-                            placeholder="Search Here..."
-                          />
-                          <button
-                            class="navbar-search-btn"
-                            type="button"
-                          >
+                          <input type="text" placeholder="Search Here..." />
+                          <button class="navbar-search-btn" type="button">
                             <i class="fal fa-search"></i>
                           </button>
                         </div>
-                        <a
-                          href="#"
-                          class="navbar-search-close"
-                        ><i class="fal fa-times"></i></a>
+                        <a href="#" class="navbar-search-close"
+                          ><i class="fal fa-times"></i
+                        ></a>
                       </form>
                     </div>
                     <!-- End Search Area  -->
@@ -233,16 +229,10 @@
           <div class="mobileheader">
             <div class="logo">
               <a href="index.html">
-                <img
-                  src="assets/images/logo/keystoke.svg"
-                  alt="Logo images"
-                />
+                <img src="assets/images/logo/keystoke.svg" alt="Logo images" />
               </a>
             </div>
-            <a
-              class="close-menu"
-              href="#"
-            ></a>
+            <a class="close-menu" href="#"></a>
           </div>
           <div class="menu-item">
             <ul class="mainmenu-item">
@@ -306,10 +296,7 @@
       <div class="side-nav">
         <div class="side-nav-inner">
           <!-- Start Search Bar  -->
-          <form
-            action="#"
-            class="side-nav-search-form"
-          >
+          <form action="#" class="side-nav-search-form">
             <div class="form-group search-field">
               <input
                 type="text"
@@ -352,18 +339,18 @@
                       </p>
                     </address>
                     <address class="address">
-                      <span class="title">We're Available 24/ 7. Call Now.</span>
+                      <span class="title"
+                        >We're Available 24/ 7. Call Now.</span
+                      >
                       <p>
-                        <a
-                          class="tel"
-                          href="tel:8884562790"
-                        ><i class="fas fa-phone"></i>(888) 456-2790</a>
+                        <a class="tel" href="tel:8884562790"
+                          ><i class="fas fa-phone"></i>(888) 456-2790</a
+                        >
                       </p>
                       <p>
-                        <a
-                          class="tel"
-                          href="tel:12125553333"
-                        ><i class="fas fa-fax"></i>(121) 255-53333</a>
+                        <a class="tel" href="tel:12125553333"
+                          ><i class="fas fa-fax"></i>(121) 255-53333</a
+                        >
                       </p>
                     </address>
                   </div>
@@ -397,10 +384,7 @@
           </div>
           <!-- End Side Content  -->
           <!-- End of .side-nav-inner -->
-          <div
-            class="close-sidenav"
-            id="close-sidenav"
-          >
+          <div class="close-sidenav" id="close-sidenav">
             <button class="close-button"><i class="fal fa-times"></i></button>
           </div>
         </div>
@@ -408,7 +392,9 @@
       <!-- End Sidebar Area  -->
 
       <!-- Start Breadcrumb Area -->
-      <div class="axil-breadcrumb-area breadcrumb-style-default pt--170 pb--70 theme-gradient">
+      <div
+        class="axil-breadcrumb-area breadcrumb-style-default pt--170 pb--70 theme-gradient"
+      >
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
@@ -417,10 +403,7 @@
                   <li class="axil-breadcrumb-item">
                     <a href="index.html">Home</a>
                   </li>
-                  <li
-                    class="axil-breadcrumb-item active"
-                    aria-current="page"
-                  >
+                  <li class="axil-breadcrumb-item active" aria-current="page">
                     Customer Reviews
                   </li>
                 </ul>
@@ -476,7 +459,9 @@
               <div class="row axil-testimonial-single">
                 <!-- Start Single Testimonial -->
                 <div class="col-lg-6 mt--60 mt_sm--30 mt_md--30">
-                  <div class="axil-testimonial testimonial style-var--2 axil-control active">
+                  <div
+                    class="axil-testimonial testimonial style-var--2 axil-control active"
+                  >
                     <div class="inner">
                       <div class="clint-info-wrapper">
                         <div class="thumb">
@@ -496,10 +481,9 @@
                           auctor iaculis lorem. In vel hendrerit nisi.
                           Vestibulum eget risus velit.
                         </p>
-                        <a
-                          class="axil-link-button"
-                          href="#"
-                        >Read Project Case Study</a>
+                        <a class="axil-link-button" href="#"
+                          >Read Project Case Study</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -508,7 +492,9 @@
 
                 <!-- Start Single Testimonial -->
                 <div class="col-lg-6 mt--60 mt_sm--30 mt_md--30">
-                  <div class="axil-testimonial style-var--2 axil-control testimonial">
+                  <div
+                    class="axil-testimonial style-var--2 axil-control testimonial"
+                  >
                     <div class="inner">
                       <div class="clint-info-wrapper">
                         <div class="thumb">
@@ -528,10 +514,9 @@
                           auctor iaculis lorem. In vel hendrerit nisi.
                           Vestibulum eget risus velit.
                         </p>
-                        <a
-                          class="axil-link-button"
-                          href="#"
-                        >Read Project Case Study</a>
+                        <a class="axil-link-button" href="#"
+                          >Read Project Case Study</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -540,7 +525,9 @@
 
                 <!-- Start Single Testimonial -->
                 <div class="col-lg-6 mt--60 mt_sm--30 mt_md--30">
-                  <div class="axil-testimonial style-var--2 axil-control testimonial">
+                  <div
+                    class="axil-testimonial style-var--2 axil-control testimonial"
+                  >
                     <div class="inner">
                       <div class="clint-info-wrapper">
                         <div class="thumb">
@@ -560,10 +547,9 @@
                           auctor iaculis lorem. In vel hendrerit nisi.
                           Vestibulum eget risus velit.
                         </p>
-                        <a
-                          class="axil-link-button"
-                          href="#"
-                        >Read Project Case Study</a>
+                        <a class="axil-link-button" href="#"
+                          >Read Project Case Study</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -572,7 +558,9 @@
 
                 <!-- Start Single Testimonial -->
                 <div class="col-lg-6 mt--60 mt_sm--30 mt_md--30">
-                  <div class="axil-testimonial style-var--2 axil-control testimonial">
+                  <div
+                    class="axil-testimonial style-var--2 axil-control testimonial"
+                  >
                     <div class="inner">
                       <div class="clint-info-wrapper">
                         <div class="thumb">
@@ -592,10 +580,9 @@
                           auctor iaculis lorem. In vel hendrerit nisi.
                           Vestibulum eget risus velit.
                         </p>
-                        <a
-                          class="axil-link-button"
-                          href="#"
-                        >Read Project Case Study</a>
+                        <a class="axil-link-button" href="#"
+                          >Read Project Case Study</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -633,7 +620,9 @@
               <div class="row axil-testimonial-single">
                 <!-- Start Single Testimonial -->
                 <div class="col-lg-6 mt--60 mt_sm--30 mt_md--30">
-                  <div class="axil-testimonial testimonial style-var--2 axil-control active">
+                  <div
+                    class="axil-testimonial testimonial style-var--2 axil-control active"
+                  >
                     <div class="inner">
                       <div class="clint-info-wrapper">
                         <div class="thumb">
@@ -653,10 +642,9 @@
                           auctor iaculis lorem. In vel hendrerit nisi.
                           Vestibulum eget risus velit.
                         </p>
-                        <a
-                          class="axil-link-button"
-                          href="#"
-                        >Read Project Case Study</a>
+                        <a class="axil-link-button" href="#"
+                          >Read Project Case Study</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -665,7 +653,9 @@
 
                 <!-- Start Single Testimonial -->
                 <div class="col-lg-6 mt--60 mt_sm--30 mt_md--30">
-                  <div class="axil-testimonial style-var--2 axil-control testimonial">
+                  <div
+                    class="axil-testimonial style-var--2 axil-control testimonial"
+                  >
                     <div class="inner">
                       <div class="clint-info-wrapper">
                         <div class="thumb">
@@ -685,10 +675,9 @@
                           auctor iaculis lorem. In vel hendrerit nisi.
                           Vestibulum eget risus velit.
                         </p>
-                        <a
-                          class="axil-link-button"
-                          href="#"
-                        >Read Project Case Study</a>
+                        <a class="axil-link-button" href="#"
+                          >Read Project Case Study</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -697,7 +686,9 @@
 
                 <!-- Start Single Testimonial -->
                 <div class="col-lg-6 mt--60 mt_sm--30 mt_md--30">
-                  <div class="axil-testimonial style-var--2 axil-control testimonial">
+                  <div
+                    class="axil-testimonial style-var--2 axil-control testimonial"
+                  >
                     <div class="inner">
                       <div class="clint-info-wrapper">
                         <div class="thumb">
@@ -717,10 +708,9 @@
                           auctor iaculis lorem. In vel hendrerit nisi.
                           Vestibulum eget risus velit.
                         </p>
-                        <a
-                          class="axil-link-button"
-                          href="#"
-                        >Read Project Case Study</a>
+                        <a class="axil-link-button" href="#"
+                          >Read Project Case Study</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -729,7 +719,9 @@
 
                 <!-- Start Single Testimonial -->
                 <div class="col-lg-6 mt--60 mt_sm--30 mt_md--30">
-                  <div class="axil-testimonial style-var--2 axil-control testimonial">
+                  <div
+                    class="axil-testimonial style-var--2 axil-control testimonial"
+                  >
                     <div class="inner">
                       <div class="clint-info-wrapper">
                         <div class="thumb">
@@ -749,10 +741,9 @@
                           auctor iaculis lorem. In vel hendrerit nisi.
                           Vestibulum eget risus velit.
                         </p>
-                        <a
-                          class="axil-link-button"
-                          href="#"
-                        >Read Project Case Study</a>
+                        <a class="axil-link-button" href="#"
+                          >Read Project Case Study</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -779,10 +770,7 @@
               </div>
               <div class="col-lg-4 col-md-4 col-sm-4 col-12 mt_mobile--20">
                 <div class="axil-social-share text-left text-sm-right">
-                  <img
-                    src="assets/images/shape/yelp.png"
-                    alt="Social Icons"
-                  />
+                  <img src="assets/images/shape/yelp.png" alt="Social Icons" />
                 </div>
               </div>
             </div>
@@ -790,7 +778,9 @@
               <div class="row axil-testimonial-single">
                 <!-- Start Single Testimonial -->
                 <div class="col-lg-6 mt--60 mt_sm--30 mt_md--30">
-                  <div class="axil-testimonial testimonial style-var--2 axil-control active">
+                  <div
+                    class="axil-testimonial testimonial style-var--2 axil-control active"
+                  >
                     <div class="inner">
                       <div class="clint-info-wrapper">
                         <div class="thumb">
@@ -810,10 +800,9 @@
                           auctor iaculis lorem. In vel hendrerit nisi.
                           Vestibulum eget risus velit.
                         </p>
-                        <a
-                          class="axil-link-button"
-                          href="#"
-                        >Read Project Case Study</a>
+                        <a class="axil-link-button" href="#"
+                          >Read Project Case Study</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -822,7 +811,9 @@
 
                 <!-- Start Single Testimonial -->
                 <div class="col-lg-6 mt--60 mt_sm--30 mt_md--30">
-                  <div class="axil-testimonial style-var--2 axil-control testimonial">
+                  <div
+                    class="axil-testimonial style-var--2 axil-control testimonial"
+                  >
                     <div class="inner">
                       <div class="clint-info-wrapper">
                         <div class="thumb">
@@ -842,10 +833,9 @@
                           auctor iaculis lorem. In vel hendrerit nisi.
                           Vestibulum eget risus velit.
                         </p>
-                        <a
-                          class="axil-link-button"
-                          href="#"
-                        >Read Project Case Study</a>
+                        <a class="axil-link-button" href="#"
+                          >Read Project Case Study</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -854,7 +844,9 @@
 
                 <!-- Start Single Testimonial -->
                 <div class="col-lg-6 mt--60 mt_sm--30 mt_md--30">
-                  <div class="axil-testimonial style-var--2 axil-control testimonial">
+                  <div
+                    class="axil-testimonial style-var--2 axil-control testimonial"
+                  >
                     <div class="inner">
                       <div class="clint-info-wrapper">
                         <div class="thumb">
@@ -874,10 +866,9 @@
                           auctor iaculis lorem. In vel hendrerit nisi.
                           Vestibulum eget risus velit.
                         </p>
-                        <a
-                          class="axil-link-button"
-                          href="#"
-                        >Read Project Case Study</a>
+                        <a class="axil-link-button" href="#"
+                          >Read Project Case Study</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -886,7 +877,9 @@
 
                 <!-- Start Single Testimonial -->
                 <div class="col-lg-6 mt--60 mt_sm--30 mt_md--30">
-                  <div class="axil-testimonial style-var--2 axil-control testimonial">
+                  <div
+                    class="axil-testimonial style-var--2 axil-control testimonial"
+                  >
                     <div class="inner">
                       <div class="clint-info-wrapper">
                         <div class="thumb">
@@ -906,10 +899,9 @@
                           auctor iaculis lorem. In vel hendrerit nisi.
                           Vestibulum eget risus velit.
                         </p>
-                        <a
-                          class="axil-link-button"
-                          href="#"
-                        >Read Project Case Study</a>
+                        <a class="axil-link-button" href="#"
+                          >Read Project Case Study</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -930,7 +922,9 @@
             <div class="container">
               <div class="row">
                 <div class="col-lg-12">
-                  <ul class="ft-social-share d-flex justify-content-center liststyle flex-wrap">
+                  <ul
+                    class="ft-social-share d-flex justify-content-center liststyle flex-wrap"
+                  >
                     <li>
                       <a href="#"><i class="fab fa-facebook-f"></i></a>
                     </li>
@@ -975,18 +969,12 @@
                       bibendum magna, ut ullamcorper purus
                     </p>
                     <div class="axil-newsletter">
-                      <form
-                        class="newsletter-form"
-                        action="#"
-                      >
-                        <input
-                          type="email"
-                          placeholder="Email"
-                        />
-                        <a
-                          class="axil-button btn-transparent"
-                          href="#"
-                        ><span class="button-text">Subscribe</span><span class="button-icon"></span></a>
+                      <form class="newsletter-form" action="#">
+                        <input type="email" placeholder="Email" />
+                        <a class="axil-button btn-transparent" href="#"
+                          ><span class="button-text">Subscribe</span
+                          ><span class="button-icon"></span
+                        ></a>
                       </form>
                     </div>
                   </div>
@@ -994,7 +982,9 @@
                 <!-- End Single Widget -->
 
                 <!-- Start Single Widget -->
-                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mt_mobile--30">
+                <div
+                  class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mt_mobile--30"
+                >
                   <div class="footer-widget-item">
                     <h6 class="title">Services</h6>
                     <div class="footer-menu-container">
@@ -1012,7 +1002,9 @@
                 <!-- End Single Widget -->
 
                 <!-- Start Single Widget -->
-                <div class="col-xl-2 col-lg-6 col-md-6 col-sm-6 col-12 mt_lg--30 mt_md--30 mt_sm--30">
+                <div
+                  class="col-xl-2 col-lg-6 col-md-6 col-sm-6 col-12 mt_lg--30 mt_md--30 mt_sm--30"
+                >
                   <div class="footer-widget-item">
                     <h6 class="title">Resourses</h6>
                     <div class="footer-menu-container">
@@ -1027,7 +1019,9 @@
                 <!-- End Single Widget -->
 
                 <!-- Start Single Widget -->
-                <div class="col-xl-1 col-lg-6 col-md-6 col-sm-6 col-12 mt_lg--30 mt_md--30 mt_sm--30">
+                <div
+                  class="col-xl-1 col-lg-6 col-md-6 col-sm-6 col-12 mt_lg--30 mt_md--30 mt_sm--30"
+                >
                   <div class="footer-widget-item widget-support">
                     <h6 class="title">Support</h6>
                     <div class="footer-menu-container">
@@ -1057,12 +1051,15 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                   <div class="quick-contact">
-                    <ul class="link-hover d-flex justify-content-center justify-content-md-end liststyle">
+                    <ul
+                      class="link-hover d-flex justify-content-center justify-content-md-end liststyle"
+                    >
                       <li>
                         <a
                           data-hover="Privacy Policy"
                           href="privacy-policy.html"
-                        >Privacy Policy</a>
+                          >Privacy Policy</a
+                        >
                       </li>
                       <li><a href="#">Terms of Use</a></li>
                     </ul>
@@ -1080,7 +1077,6 @@
   </div>
 </template>
 <script>
-
 export default {
   name: "testimonial",
   methods: {
