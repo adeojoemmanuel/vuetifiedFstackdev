@@ -12,7 +12,7 @@
                             <div class="col-lg-8 col-12">
                                 <div class="content">
                                     <div class="inner">
-                                        <h1 class="axil-display-1 mb--40 wow slideFadeInUp" data-wow-duration="1s" data-wow-delay="500ms">Technology <br /> & design studio</h1>
+                                        <h1 class="axil-display-1 mb--40 wow slideFadeInUp" data-wow-duration="1s" data-wow-delay="500ms">Technology <br />& design studio</h1>
                                             <a class="axil-button  btn-large btn-transparent wow slideFadeInUp" data-wow-duration="1s" data-wow-delay="800ms" href="#"><span
                                                 class="button-text">View Showcase</span><span
                                                 class="button-icon"></span></a>
