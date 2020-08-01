@@ -106,10 +106,8 @@
         </div>
         <div class="menu-item">
           <ul class="mainmenu-item">
-            <li><router-link to="/home">Home</router-link></li>
-            <li class="has-dropdown">
-              <router-link to="/service">Services</router-link>
-            </li>
+            <li><router-link to="/">Home</router-link></li>
+            <li class="has-dropdown"><router-link to="/service">Services</router-link></li>
             <li><router-link to="/about">About Us</router-link></li>
             <li><router-link to="/contact">Contact</router-link></li>
             <li><router-link to="/training">Training</router-link></li>
