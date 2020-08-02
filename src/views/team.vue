@@ -673,7 +673,7 @@
                           <a href="team-details.html">
                             <img
                               class="w-100"
-                              src="assets/images/team/zues.JPG"
+                              src="assets/images/team/zues.jpeg"
                               alt="Team Images"
                             />
                           </a>

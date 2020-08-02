@@ -24,7 +24,7 @@
                     <li><router-link to="/about">About Us</router-link></li>
                     <!-- <li class="has-dropdown"><a href="#">Blog</a></li> -->
                     <li><router-link to="/service">Services</router-link></li>
-                    <!-- <li><a href="team.html">Team</a></li> -->
+                    <li><router-link to="/team">Team</router-link></li>
                     <li><router-link to="/contact">Contact</router-link></li>
                     <li><router-link to="/training">Training</router-link></li>
                   </ul>
@@ -109,6 +109,7 @@
             <li><router-link to="/">Home</router-link></li>
             <li class="has-dropdown"><router-link to="/service">Services</router-link></li>
             <li><router-link to="/about">About Us</router-link></li>
+            <li><router-link to="/team">Team</router-link></li>
             <li><router-link to="/contact">Contact</router-link></li>
             <li><router-link to="/training">Training</router-link></li>
           </ul>

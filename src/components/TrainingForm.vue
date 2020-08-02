@@ -1,21 +1,5 @@
 <template>
   <!-- Start Contact Form -->
-<<<<<<< HEAD
-  <div class="contact-form-wrapper" style="">
-    <div class="axil-contact-form contact-form-style-1">
-      <h3 class="title">Bootcamp Registration Form</h3>
-      <form>
-        <div
-          class="form-group"
-          :class="[$v.surname.$error ? 'form-group--error' : '']"
-        >
-          <input type="text" v-model="surname" placeholder="Surname" @blur="$v.surname.$touch()" />
-          
-          <!-- <span class="focus-border"></span> -->
-          <div v-if="$v.surname.$error">
-            <span v-if="!$v.surname.required" class="error-text"
-              >Your Surname is needed for registration.</span
-=======
     <div class="contact-form-wrapper">
       <!-- Start Contact Form -->
       <div class="contact-f">
@@ -24,10 +8,9 @@
             <div
               class="form-group"
               :class="[$v.surname.$error ? 'form-group--error' : '']"
->>>>>>> f29643c430093a7aa129972d8e0b34d625c0e679
             >
-              <input type="text" v-model="surname" @blur="$v.surname.$touch()" />
-              <label>Surname</label>
+              <input type="text" v-model="surname" @blur="$v.surname.$touch()" placeholder="Surname"/>
+              
               <!-- <span class="focus-border"></span> -->
               <div v-if="$v.surname.$error">
                 <span v-if="!$v.surname.required" class="error-text"
@@ -43,30 +26,13 @@
               class="form-group"
               :class="[$v.firstName.$error ? 'form-group--error' : '']"
             >
-<<<<<<< HEAD
-          </div>
-        </div>
-        <div
-          class="form-group"
-          :class="[$v.firstName.$error ? 'form-group--error' : '']"
-        >
-          <input
-            type="text"
-            v-model="firstName"
-            @blur="$v.firstName.$touch()"
-            placeholder="firstName"
-          />
-          <!-- <span class="focus-border"></span> -->
-          <div v-if="$v.firstName.$error">
-            <span v-if="!$v.firstName.required" class="error-text"
-              >Your first name is needed for registration.</span
-=======
               <input
                 type="text"
                 v-model="firstName"
                 @blur="$v.firstName.$touch()"
+                placeholder="First Name"
               />
-              <label>First Name</label>
+              
               <!-- <span class="focus-border"></span> -->
               <div v-if="$v.firstName.$error">
                 <span v-if="!$v.firstName.required" class="error-text"
@@ -80,127 +46,19 @@
             </div>
             <div
               class="form-group"
-              :class="[$v.otherNames.$error ? 'form-group--error' : '']"
->>>>>>> f29643c430093a7aa129972d8e0b34d625c0e679
             >
               <input
                 type="text"
                 v-model="otherNames"
-                @blur="$v.otherNames.$touch()"
+                placeholder="Other Name"
               />
-              <label>Other Name</label>
               <!-- <span class="focus-border"></span> -->
-              <div v-if="$v.otherNames.$error">
-                <span v-if="!$v.otherNames.minLength" class="error-text"
-                  >Your other name must have at least
-                  {{ $v.otherNames.$params.minLength.min }} letters.</span
-                >
-              </div>
             </div>
             <div
               class="form-group"
               :class="[$v.email.$error ? 'form-group--error' : '']"
             >
-<<<<<<< HEAD
-          </div>
-        </div>
-        <div
-          class="form-group"
-          :class="[$v.otherNames.$error ? 'form-group--error' : '']"
-        >
-          <input
-            type="text"
-            v-model="otherNames"
-            @blur="$v.otherNames.$touch()"
-            placeholder="OtherName"
-          />
-          
-          <!-- <span class="focus-border"></span> -->
-          <div v-if="$v.otherNames.$error">
-            <span v-if="!$v.otherNames.minLength" class="error-text"
-              >Your other name must have at least
-              {{ $v.otherNames.$params.minLength.min }} letters.</span
-            >
-          </div>
-        </div>
-        <div
-          class="form-group"
-          :class="[$v.email.$error ? 'form-group--error' : '']"
-        >
-          <input type="email" v-model="email" placeholder="Email" @blur="$v.email.$touch()" />
-          
-          <!-- <span class="focus-border"></span> -->
-          <div v-if="$v.email.$error">
-            <span v-if="!$v.email.required" class="error-text"
-              >Your email is needed for registration</span
-            >
-            <span v-if="!$v.email.email" class="error-text"
-              >Your email is not valid</span
-            >
-          </div>
-        </div>
-        <div
-          class="form-group"
-          :class="[$v.phone.$error ? 'form-group--error' : '']"
-        >
-          <input type="text" v-model="phone" placeholder="Phone Number" @blur="$v.phone.$touch()" />
-          
-          <!-- <span class="focus-border"></span> -->
-          <div v-if="$v.phone.$error">
-            <span v-if="!$v.phone.numeric" class="error-text"
-              >Phone number cant contain letters, thanks.</span
-            >
-            <span v-if="!$v.phone.required" class="error-text"
-              >Your phone is needed for registration</span
-            >
-            <span v-if="!$v.phone.minLength" class="error-text"
-              >Your phone must have at least
-              {{ $v.phone.$params.minLength.min }} digits</span
-            >
-            <span v-if="!$v.phone.maxLength" class="error-text"
-              >Ahhhh Nigerian phone numbers cant be this long naw, cant be
-              longer than {{ $v.phone.$params.maxLength.max }} digits</span
-            >
-          </div>
-        </div>
-        <div
-          class="form-group"
-          :class="[$v.address.$error ? 'form-group--error' : '']"
-        >
-          <input type=" text" v-model="address" @blur="$v.address.$touch()" />
-          <label>Address</label>
-          <!-- <span class="focus-border"></span> -->
-          <div v-if="$v.address.$error">
-            <span v-if="!$v.address.required" class="error-text"
-              >Your address is needed for registration</span
-            >
-          </div>
-        </div>
-        <div class="form-group">
-          <LoadingButton
-            class="axil-button btn-large btn-transparent w-100"
-            :styled="false"
-            :loading="loading"
-            aria-label="Register Now "
-            @buttonClick="formSubmit"
-            buttonText="Register Now"
-          />
-          <!-- <button class="" @click.prevent="formSubmit" :disabled="loading">
-                        <span v-if="loading">Sending...</span>
-                        <span class="button-text" v-else>Register Now</span><span class="button-icon"></span>
-                    </button>
- -->
-        </div>
-      </form>
-      <div class="callto-action-wrapper text-center">
-        <span class="text">Or call us now</span>
-        <span
-          ><i class="fal fa-phone-alt"></i>
-          <a href="#">+(234) 813490-1464</a></span
-        >
-=======
-              <input type="email" v-model="email" @blur="$v.email.$touch()" />
-              <label>Email</label>
+              <input type="email" v-model="email" @blur="$v.email.$touch()"  placeholder="Email"/>
               <!-- <span class="focus-border"></span> -->
               <div v-if="$v.email.$error">
                 <span v-if="!$v.email.required" class="error-text"
@@ -215,8 +73,7 @@
               class="form-group"
               :class="[$v.phone.$error ? 'form-group--error' : '']"
             >
-              <input type="text" v-model="phone" @blur="$v.phone.$touch()" />
-              <label>Phone Number</label>
+              <input type="text" v-model="phone" @blur="$v.phone.$touch()" placeholder="Phone Number"/>
               <!-- <span class="focus-border"></span> -->
               <div v-if="$v.phone.$error">
                 <span v-if="!$v.phone.numeric" class="error-text"
@@ -239,8 +96,7 @@
               class="form-group"
               :class="[$v.address.$error ? 'form-group--error' : '']"
             >
-              <input type=" text" v-model="address" @blur="$v.address.$touch()" />
-              <label>Address</label>
+              <input type=" text" v-model="address" @blur="$v.address.$touch()" placeholder="Address"/>
               <!-- <span class="focus-border"></span> -->
               <div v-if="$v.address.$error">
                 <span v-if="!$v.address.required" class="error-text"
@@ -258,7 +114,17 @@
               <label for="no">No</label><br>
             </div>
             <div v-show="selected === 'yes'">
+              <LoadingButton
+                v-show="email == '' || surname =='' || firstName =='' || phone =='' || address ==''"
+                class="axil-button btn-large btn-transparent w-100"
+                :styled="false"
+                :loading="loading"
+                aria-label="Make Payment "
+                @buttonClick="validatePayment"
+                buttonText="Make Payment"
+              />
               <paystack
+                v-show="email != '' && surname !='' && firstName !='' && phone !='' && address !=''"
                 class="axil-button btn-large btn-transparent w-100"
                 :amount="amount * 100"
                 :email="email"
@@ -281,7 +147,6 @@
               />
             </div>
           </form>
->>>>>>> f29643c430093a7aa129972d8e0b34d625c0e679
       </div>
       <!-- End Contact Form -->
   </div>
@@ -321,6 +186,7 @@ export default {
   },
   computed: {
     reference(){
+      this.validatePayment;
       let text = "";
       let possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
@@ -334,7 +200,6 @@ export default {
   validations: {
     surname: { required, minLength: minLength(3) },
     firstName: { required, minLength: minLength(3) },
-    otherNames: { minLength: minLength(3) },
     address: { required },
     phone: {
       required,
@@ -350,16 +215,53 @@ export default {
     };
   },
   methods: {
+    validatePayment(){
+      this.$v.$touch();
+      if (this.$v.$invalid) {
+        this.submitStatus ="Error, please fill out all the requred details thanks.";
+        this.$swal({
+          toast: true,
+          position: "top-end",
+          showConfirmButton: false,
+          timer: 3000,
+          timerProgressBar: true,
+          title: this.submitStatus,
+          icon: "error"
+        });
+        let as = this;
+        setTimeout(function() {
+          as.loading = false;
+        }, 2000);
+        return false;
+      }
+    },
     processPayment: (res) => {
-      console.log(res);
-      window.alert("Payment recieved")
+      // console.log(res);
+      this.loading = true;
+        this.$v.$touch();
+          this.$firestore.users
+            .add({
+              surname: this.surname,
+              firstname: this.firstName,
+              othernames: this.otherNames,
+              email: this.email,
+              phone: this.phone,
+              address: this.address,
+              payed:"yes",
+              paymentData:res,
+              timestamp: new Date()
+            })
+            .then(docRef => {
+              this.successOperation();
+            })
+            .catch(error => {
+              this.failedRequest();
+            });
     },
     close: () => {
-     console.log("You closed checkout page")
+    //  console.log("You closed checkout page")
     },
     async formSubmit() {
-      console.log(this.selected);
-      if(this.selected === "yes"){
         this.loading = true;
         this.$v.$touch();
         if (!this.$v.$invalid) {
@@ -371,6 +273,8 @@ export default {
               email: this.email,
               phone: this.phone,
               address: this.address,
+              payed:"no",
+              paymentData:null,
               timestamp: new Date()
             })
             .then(docRef => {
@@ -396,9 +300,6 @@ export default {
             as.loading = false;
           }, 2000);
         }
-      }else{
-
-      }
     },
     successOperation() {
       this.$swal({
