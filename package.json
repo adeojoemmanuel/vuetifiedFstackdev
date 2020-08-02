@@ -25,7 +25,7 @@
     "v-file-upload": "^3.1.7",
     "v-viewer": "^1.5.1",
     "vee-validate": "^3.2.4",
-    "vue": "^2.6.10",
+    "vue": "^2.6.11",
     "vue-button-spinner": "^2.2.1",
     "vue-carousel": "^0.18.0",
     "vue-carousel-card": "^1.0.3",
@@ -37,13 +37,14 @@
     "vue-infinite-loading": "^2.4.4",
     "vue-infinite-scroll": "^2.0.2",
     "vue-js-modal": "^1.3.33",
+    "vue-loader": "^15.9.3",
     "vue-loading-button": "^0.2.0",
     "vue-loading-overlay": "^3.2.0",
     "vue-notification": "^1.3.20",
     "vue-onload": "^0.3.0",
     "vue-owl-carousel": "^2.0.3",
     "vue-owl-carousel2": "^2.0.7",
-    "vue-paystack": "^2.0.2",
+    "vue-paystack": "^2.0.3",
     "vue-phone-number-input": "^1.0.10",
     "vue-route-middleware": "^1.0.3",
     "vue-router": "^3.1.3",
@@ -73,6 +74,6 @@
     "node-sass": "^4.13.0",
     "prettier": "^1.18.2",
     "sass-loader": "^8.0.0",
-    "vue-template-compiler": "^2.6.10"
+    "vue-template-compiler": "^2.6.11"
   }
 }
