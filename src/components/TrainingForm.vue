@@ -1,6 +1,6 @@
 <template>
   <!-- Start Contact Form -->
-  <div class="contact-form-wrapper" style="margin-buttom:10%;">
+  <div class="contact-form-wrapper" style="">
     <div class="axil-contact-form contact-form-style-1">
       <h3 class="title">Bootcamp Registration Form</h3>
       <form>
@@ -8,8 +8,8 @@
           class="form-group"
           :class="[$v.surname.$error ? 'form-group--error' : '']"
         >
-          <input type="text" v-model="surname" @blur="$v.surname.$touch()" />
-          <label>Surname</label>
+          <input type="text" v-model="surname" placeholder="Surname" @blur="$v.surname.$touch()" />
+          
           <!-- <span class="focus-border"></span> -->
           <div v-if="$v.surname.$error">
             <span v-if="!$v.surname.required" class="error-text"
@@ -29,8 +29,8 @@
             type="text"
             v-model="firstName"
             @blur="$v.firstName.$touch()"
+            placeholder="firstName"
           />
-          <label>First Name</label>
           <!-- <span class="focus-border"></span> -->
           <div v-if="$v.firstName.$error">
             <span v-if="!$v.firstName.required" class="error-text"
@@ -50,8 +50,9 @@
             type="text"
             v-model="otherNames"
             @blur="$v.otherNames.$touch()"
+            placeholder="OtherName"
           />
-          <label>Other Name</label>
+          
           <!-- <span class="focus-border"></span> -->
           <div v-if="$v.otherNames.$error">
             <span v-if="!$v.otherNames.minLength" class="error-text"
@@ -64,8 +65,8 @@
           class="form-group"
           :class="[$v.email.$error ? 'form-group--error' : '']"
         >
-          <input type="email" v-model="email" @blur="$v.email.$touch()" />
-          <label>Email</label>
+          <input type="email" v-model="email" placeholder="Email" @blur="$v.email.$touch()" />
+          
           <!-- <span class="focus-border"></span> -->
           <div v-if="$v.email.$error">
             <span v-if="!$v.email.required" class="error-text"
@@ -80,8 +81,8 @@
           class="form-group"
           :class="[$v.phone.$error ? 'form-group--error' : '']"
         >
-          <input type="text" v-model="phone" @blur="$v.phone.$touch()" />
-          <label>Phone Number</label>
+          <input type="text" v-model="phone" placeholder="Phone Number" @blur="$v.phone.$touch()" />
+          
           <!-- <span class="focus-border"></span> -->
           <div v-if="$v.phone.$error">
             <span v-if="!$v.phone.numeric" class="error-text"
