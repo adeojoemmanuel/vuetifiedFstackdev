@@ -4,7 +4,7 @@
       <!-- Start Contact Form -->
       <div class="contact-f">
           <h3 class="title">Bootcamp Registration Form</h3>
-          <form>
+          <form @submit.prevent="">
             <div
               class="form-group"
               :class="[$v.surname.$error ? 'form-group--error' : '']"
@@ -116,14 +116,27 @@
             </div>
             <div>
               <p>Do you want to pay now:</p>
-              <input type="radio" id="yes" name="yes" value="Yes" :checked="shouldPay === 'yes'"  @change="onChange($event.target.value)">
+             <input type="radio" name="paper"  id="yes"  v-model="selected" value="yes">
               <label for="yes">Yes</label><br>
             </div>
             <div>
-              <input type="radio" id="no" name="no" value="no" :checked="shouldPay === 'no'"  @change="onChange($event.target.value)">
+              <input type="radio" name="paper"  id="no" v-model="selected" value="no">
               <label for="no">No</label><br>
             </div>
-            <div class="form-group">
+            <div v-show="selected === 'yes'">
+              <paystack
+                class="axil-button btn-large btn-transparent w-100"
+                :amount="amount * 100"
+                :email="email"
+                :paystackkey="paystackkey"
+                :reference="reference"
+                :callback="processPayment"
+                :close="close"
+              >
+                Make Payment
+             </paystack>
+            </div>
+            <div class="form-group" v-show="selected === 'no'">
               <LoadingButton
                 class="axil-button btn-large btn-transparent w-100"
                 :styled="false"
@@ -144,6 +157,7 @@
 import LoadingButton from "@/components/LoadingButton";
 import { validationMixin } from "vuelidate";
 import db from "@/firebase";
+import paystack from 'vue-paystack';
 import {
   required,
   minLength,
@@ -152,7 +166,7 @@ import {
   numeric
 } from "vuelidate/lib/validators";
 export default {
-  components: { LoadingButton },
+  components: { LoadingButton,paystack },
   data() {
     return {
       loading: false,
@@ -164,9 +178,22 @@ export default {
       address: "",
       submitStatus: null,
       users: [],
-      shouldPayu: "no",
-      shouldPayu2: "yes"
+      shouldPay: "",
+      selected: 'no',
+      paystackkey: "pk_test_481d63b5950de86ceea29f2877ce0b527409b943",
+      amount: 1000000,
     };
+  },
+  computed: {
+    reference(){
+      let text = "";
+      let possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+      for( let i=0; i < 10; i++ )
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+      return text;
+    }
   },
   mixins: [validationMixin],
   validations: {
@@ -188,54 +215,55 @@ export default {
     };
   },
   methods: {
-    check(event){
-       this.shouldPay = event.target.value;
-      console.log(event.target.value);
+    processPayment: (res) => {
+      console.log(res);
+      window.alert("Payment recieved")
     },
-    onChange(e) {
-        this.radio = e
-    },
-    onChange2(e) {
-        this.radio2 = e
+    close: () => {
+     console.log("You closed checkout page")
     },
     async formSubmit() {
-      console.log(this.shouldPay);
-      // this.loading = true;
-      // this.$v.$touch();
-      // if (!this.$v.$invalid) {
-      //   this.$firestore.users
-      //     .add({
-      //       surname: this.surname,
-      //       firstname: this.firstName,
-      //       othernames: this.otherNames,
-      //       email: this.email,
-      //       phone: this.phone,
-      //       address: this.address,
-      //       timestamp: new Date()
-      //     })
-      //     .then(docRef => {
-      //       this.successOperation();
-      //     })
-      //     .catch(error => {
-      //       this.failedRequest();
-      //     });
-      // } else {
-      //   this.submitStatus =
-      //     "Error, please fill out all the requred details thanks.";
-      //   this.$swal({
-      //     toast: true,
-      //     position: "top-end",
-      //     showConfirmButton: false,
-      //     timer: 3000,
-      //     timerProgressBar: true,
-      //     title: this.submitStatus,
-      //     icon: "error"
-      //   });
-      //   let as = this;
-      //   setTimeout(function() {
-      //     as.loading = false;
-      //   }, 2000);
-      // }
+      console.log(this.selected);
+      if(this.selected === "yes"){
+        this.loading = true;
+        this.$v.$touch();
+        if (!this.$v.$invalid) {
+          this.$firestore.users
+            .add({
+              surname: this.surname,
+              firstname: this.firstName,
+              othernames: this.otherNames,
+              email: this.email,
+              phone: this.phone,
+              address: this.address,
+              timestamp: new Date()
+            })
+            .then(docRef => {
+              this.successOperation();
+            })
+            .catch(error => {
+              this.failedRequest();
+            });
+        } else {
+          this.submitStatus =
+            "Error, please fill out all the requred details thanks.";
+          this.$swal({
+            toast: true,
+            position: "top-end",
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            title: this.submitStatus,
+            icon: "error"
+          });
+          let as = this;
+          setTimeout(function() {
+            as.loading = false;
+          }, 2000);
+        }
+      }else{
+
+      }
     },
     successOperation() {
       this.$swal({
@@ -267,19 +295,6 @@ export default {
       this.loading = false;
     }
   }
-  // created() {
-  //     db.collection('users').get().then(querySnapshot => {
-  //         querySnapshot.forEach(doc => {
-  //             // console.log(doc)
-  //             const data = {
-  //                 'id': doc.id,
-  //                 user: doc.data()
-  //             }
-  //             this.users.push(data)
-  //         })
-  //     })
-  //     console.log(users);
-  // }
 };
 </script>
 <style lang="scss" scoped>
